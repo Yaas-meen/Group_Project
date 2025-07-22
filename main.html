@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ihifix Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1d2c76;
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 40px;
+    }
+
+    .left {
+      max-width: 600px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .button {
+      background-color: #cbe6d6;
+      color: #000;
+      padding: 10px 20px;
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .stats {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .stat {
+      flex: 1;
+      min-width: 130px;
+      margin-right: 20px;
+    }
+
+    .stat h3 {
+      font-size: 24px;
+      color: #cbe6d6;
+    }
+
+    .stat p {
+      font-size: 14px;
+      color: #ddd;
+    }
+
+    .right {
+      margin-top: 20px;
+    }
+
+    .globe-img {
+      width: 350px;
+      max-width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .left, .right {
+        width: 90%;
+        text-align: center;
+      }
+
+      .stats {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h1>BRIDGING THE DIGITAL DIVIDE,<br>EMPOWERING AFRICA'S FUTURE</h1>
+      <h2>Empowering communities through transformative technology and social change.</h2>
+      <p>
+        ihifix is more than a company, it's a movement. We are a triple helix organization
+        weaving together cutting-edge consultancy services, academic excellence, and a foundation
+        dedicated to social impact. Our vision? A digitally connected Africa where technology
+        empowers individuals, bridges divides, and unlocks a brighter future.
+      </p>
+      <a href="#" class="button">Get Started</a>
+
+      <div class="stats">
+        <div class="stat">
+          <h3>15</h3>
+          <p>Years of experience</p>
+        </div>
+        <div class="stat">
+          <h3>8000+</h3>
+          <p>Persons Trained</p>
+        </div>
+        <div class="stat">
+          <h3>100+</h3>
+          <p>Projects Executed</p>
+        </div>
+        <div class="stat">
+          <h3>100+</h3>
+          <p>Organisations worked with</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="right">
+      
+      <img src="https://ihifix.com/wp-content/uploads/2024/06/ihifix-connected.png" alt="Globe" class="globe-img">
+    </div>
+  </div>
+</body>
+</html>
